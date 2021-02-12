@@ -1,0 +1,63 @@
+<div class="row alert alert-success" *ngIf="change">
+  <div class="col-12">
+    Les changements sont bien enregistres
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label for="">Titre</label>
+      <input type="text" class="form-control" [(ngModel)]="comic.comicName">
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label for="">Nom de l'auteur</label>
+      <input type="text" class="form-control" [(ngModel)]="comic.authorName">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label for="">Dessigneur</label>
+      <input type="text" class="form-control" [(ngModel)]="comic.drawerName">
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label for="">Date de publication</label>
+      <input type="text" class="form-control" [(ngModel)]="comic.date">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label for="">Editoriel</label>
+      <input type="text" class="form-control" [(ngModel)]="comic.editoriel">
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label for="">Issues</label>
+      <input type="number" class="form-control" [(ngModel)]="comic.issues">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="form-group">
+      <label for="">Image</label>
+      <input type="text" class="form-control" [(ngModel)]="comic.picktureLink">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="submit">
+      <button class="btn btn-success" (click)="modif()">Envoyer</button>
+    </div>
+  </div>
+</div>
+

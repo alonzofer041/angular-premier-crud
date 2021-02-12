@@ -1,0 +1,18 @@
+<br>
+<div class="row shadow">
+  <div class="col-2">
+    <img class="img-comic" [src]="picktureLink">
+  </div>
+  <div class="col-8">
+    <h5>{{comicName}}</h5>
+    <h5>Écrit par: {{authorName}}</h5>
+    <h5>Designé par: {{drawerName}}</h5>
+    <h5>Année de publication: {{date}}</h5>
+    <h5>Editoriel: {{editoriel}}</h5>
+    <h5>Il existe {{issues}} éditions</h5>
+  </div>
+  <div class="col-2">
+    <a [routerLink]="['/modif',id]" class="btn btn-warning">M</a>
+    <button class="btn btn-danger" (click)="supr()">X</button>
+  </div>
+</div>

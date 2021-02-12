@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ComicService} from "./services/comic.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crudcomic';
+  comics:any=[];
+
+  constructor(
+    private Comic:ComicService
+  ) {
+  }
+  ngOnInit(){
+    this.comics=this.Comic.comics;
+  }
+
 }

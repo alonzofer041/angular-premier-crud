@@ -1,0 +1,13 @@
+<ul class="list-group">
+  <app-comic *ngFor="let comic of comics; let i=index"
+              [comicName]="comic.data.comicName"
+              [authorName]="comic.data.authorName"
+              [drawerName]="comic.data.drawerName"
+              [picktureLink]="comic.data.picktureLink"
+              [date]="comic.data.date"
+              [editoriel]="comic.data.editoriel"
+              [issues]="comic.data.issues"
+              [index]="i"
+              [id]="comic.id"></app-comic>
+</ul>
+
